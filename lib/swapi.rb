@@ -8,13 +8,13 @@ class Swapi
 
     read_timeout 10
 
-    base_uri 'swapi.co'
+    base_uri 'swapi.dev/api'
     
     def self.fetchAll
-        get('/api/films/')
+        get('/films/')
     end 
 
     def self.fetchDetail(detail)
-        get('/api/films/'+ detail +'/')
+        get('/films/'+ detail +'/')
     end
 end
